@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function SplashScreen() {}\n;","map":{"version":3,"names":["SplashScreen"],"sources":["D:/Code/Faculdade/EJCM/Colmeia/colmeia/src/pages/SplashScreen/index.tsx"],"sourcesContent":["export default function SplashScreen() {\r\n\r\n    \r\n\r\n};"],"mappings":"AAAA,eAAe,SAASA,YAAT,GAAwB,CAItC;AAAA"},"metadata":{},"sourceType":"module"}

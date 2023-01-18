@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import SplashScreen1 from './pages/SplashScreen1';
+import SplashScreen2 from './pages/SplashScreen2';
+
+
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
 
 function App() {
+
+  const Stack = createStackNavigator();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false
+        }}
+      >
+        <Stack.Screen
+
+          name="SplashScreen2"
+          component={SplashScreen2}
+        />
+        <Stack.Screen
+
+          name="SplashScreen1"
+          component={SplashScreen1}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
