@@ -6,6 +6,7 @@ import SplashScreen2 from './pages/SplashScreen2';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
+import Onboarding5 from './pages/Onboarding5';
 
 function App() {
 
@@ -18,6 +19,11 @@ function App() {
           headerShown: false
         }}
       >
+        <Stack.Screen
+          name="onBoarding5"
+          component={Onboarding5}
+        />
+
         <Stack.Screen
 
           name="SplashScreen2"
